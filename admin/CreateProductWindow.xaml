@@ -1,0 +1,73 @@
+﻿<Window x:Class="wpf_shoes.admin.CreateProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf_shoes.admin"
+        mc:Ignorable="d"
+        Title="CreateProductWindow" Height="450" Width="800">
+    <Grid>
+
+        <TextBlock Text="Артикул" Margin="10,10,0,0"
+           VerticalAlignment="Top"/>
+        <TextBox x:Name="tbId" Width="200" Height="25"
+         Margin="160,10,0,0"
+         HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <TextBlock Text="Название" Margin="10,45,0,0"
+           VerticalAlignment="Top"/>
+        <TextBox x:Name="tbName" Width="200" Height="25"
+         Margin="160,45,0,0"
+         HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <TextBlock Text="Цена" Margin="10,80,0,0"
+           VerticalAlignment="Top"/>
+        <TextBox x:Name="tbPrice" Width="200" Height="25"
+         Margin="160,80,0,0"
+         HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <TextBlock Text="ID категории" Margin="10,115,0,0"
+           VerticalAlignment="Top"/>
+        <TextBox x:Name="tbCategoryId" Width="200" Height="25"
+         Margin="160,115,0,0"
+         HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <TextBlock Text="ID производителя" Margin="10,150,0,0"
+           VerticalAlignment="Top"/>
+        <TextBox x:Name="tbManufacturerId" Width="200" Height="25"
+         Margin="160,150,0,0"
+         HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <TextBlock Text="ID поставщика" Margin="10,185,0,0"
+           VerticalAlignment="Top"/>
+        <TextBox x:Name="tbDeliveryId" Width="200" Height="25"
+         Margin="160,185,0,0"
+         HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <TextBlock Text="Скидка" Margin="10,220,0,0"
+           VerticalAlignment="Top"/>
+        <TextBox x:Name="tbDiscount" Width="200" Height="25"
+         Margin="160,220,0,0"
+         HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <TextBlock Text="Количество" Margin="10,255,0,0"
+           VerticalAlignment="Top"/>
+        <TextBox x:Name="tbStock" Width="200" Height="25"
+         Margin="160,255,0,0"
+         HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <TextBlock Text="Описание" Margin="10,290,0,0"
+           VerticalAlignment="Top"/>
+        <TextBox x:Name="tbDescription" Width="200" Height="25"
+         Margin="160,290,0,0"
+         HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <Button Content="Добавить товар"
+        Width="200" Height="30"
+        Margin="160,330,0,0"
+        HorizontalAlignment="Left"
+        VerticalAlignment="Top"
+        Click="BtnAddProduct"/>
+
+    </Grid>
+</Window>
