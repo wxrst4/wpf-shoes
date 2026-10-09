@@ -43,6 +43,8 @@ namespace wpf_shoes.admin
 
             db.orders.Add(newOrder);
             db.SaveChanges();
+
+            Close();
         }
     }
 }

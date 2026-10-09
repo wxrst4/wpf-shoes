@@ -29,31 +29,22 @@ namespace wpf_shoes.admin
 
         private void BtnAddProduct(object sender, RoutedEventArgs e)
         {
-            try
+            var p = new product
             {
-                var p = new product
-                {
-                    productId = int.Parse(tbId.Text),
-                    name = tbName.Text,
-                    price = decimal.Parse(tbPrice.Text),
-                    categoryId = int.Parse(tbCategoryId.Text),
-                    manufacturerId = int.Parse(tbManufacturerId.Text),
-                    deliveryId = int.Parse(tbDeliveryId.Text),
-                    discount = int.Parse(tbDiscount.Text),
-                    stock = int.Parse(tbStock.Text),
-                    description = tbDescription.Text
-                };
+                productId = int.Parse(tbId.Text),
+                name = tbName.Text,
+                price = decimal.Parse(tbPrice.Text),
+                categoryId = int.Parse(tbCategoryId.Text),
+                manufacturerId = int.Parse(tbManufacturerId.Text),
+                deliveryId = int.Parse(tbDeliveryId.Text),
+                discount = int.Parse(tbDiscount.Text),
+                stock = int.Parse(tbStock.Text),
+                description = tbDescription.Text
+            };
 
-                db.products.Add(p);
-                db.SaveChanges();
-
-                MessageBox.Show("Товар добавлен!");
-                Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.GetBaseException().Message);
-            }
+            db.products.Add(p);
+            db.SaveChanges();
+            Close();
         }
     }
 }
