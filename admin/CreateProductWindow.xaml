@@ -28,21 +28,27 @@
 
         <TextBlock Text="ID категории" Margin="10,115,0,0"
            VerticalAlignment="Top"/>
-        <TextBox x:Name="tbCategoryId" Width="200" Height="25"
+        <ComboBox x:Name="cbCategoryId" Width="200" Height="25"
          Margin="160,115,0,0"
-         HorizontalAlignment="Left" VerticalAlignment="Top"/>
+         HorizontalAlignment="Left" VerticalAlignment="Top"
+         DisplayMemberPath="name" SelectedValuePath="categoryId"
+         />
 
         <TextBlock Text="ID производителя" Margin="10,150,0,0"
            VerticalAlignment="Top"/>
-        <TextBox x:Name="tbManufacturerId" Width="200" Height="25"
+        <ComboBox x:Name="cbManufacturerId" Width="200" Height="25"
          Margin="160,150,0,0"
-         HorizontalAlignment="Left" VerticalAlignment="Top"/>
+         HorizontalAlignment="Left" VerticalAlignment="Top"
+         DisplayMemberPath="name" SelectedValuePath="manufacturerId"
+         />
 
         <TextBlock Text="ID поставщика" Margin="10,185,0,0"
            VerticalAlignment="Top"/>
-        <TextBox x:Name="tbDeliveryId" Width="200" Height="25"
+        <ComboBox x:Name="cbDeliveryId" Width="200" Height="25"
          Margin="160,185,0,0"
-         HorizontalAlignment="Left" VerticalAlignment="Top"/>
+         HorizontalAlignment="Left" VerticalAlignment="Top"
+         DisplayMemberPath="name" SelectedValuePath="deliveryId"
+         />
 
         <TextBlock Text="Скидка" Margin="10,220,0,0"
            VerticalAlignment="Top"/>

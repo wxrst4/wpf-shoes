@@ -25,6 +25,10 @@ namespace wpf_shoes.admin
         public CreateProductWindow()
         {
             InitializeComponent();
+
+            cbCategoryId.ItemsSource = db.categories.ToList();
+            cbManufacturerId.ItemsSource = db.manufacturers.ToList();
+            cbDeliveryId.ItemsSource = db.delivers.ToList();
         }
 
         private void BtnAddProduct(object sender, RoutedEventArgs e)
@@ -34,9 +38,9 @@ namespace wpf_shoes.admin
                 productId = int.Parse(tbId.Text),
                 name = tbName.Text,
                 price = decimal.Parse(tbPrice.Text),
-                categoryId = int.Parse(tbCategoryId.Text),
-                manufacturerId = int.Parse(tbManufacturerId.Text),
-                deliveryId = int.Parse(tbDeliveryId.Text),
+                categoryId = (long)cbCategoryId.SelectedValue,
+                manufacturerId = (long)cbManufacturerId.SelectedValue,
+                deliveryId = (long)cbDeliveryId.SelectedValue,
                 discount = int.Parse(tbDiscount.Text),
                 stock = int.Parse(tbStock.Text),
                 description = tbDescription.Text

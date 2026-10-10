@@ -43,15 +43,17 @@
 
         <TextBlock Text="ID адреса" Margin="10,76,0,0"
                VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="tbAddressId" Width="170" Height="25"
+        
+        <ComboBox x:Name="cbAddressId" Width="170" Height="25"
              Margin="155,76,0,0"
-             HorizontalAlignment="Left" VerticalAlignment="Top"/>
+             HorizontalAlignment="Left" VerticalAlignment="Top" SelectedValuePath="addressId" DisplayMemberPath="name"/>
 
         <TextBlock Text="ID пользователя" Margin="370,76,0,0"
                VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="tbUserId" Width="170" Height="25"
+        
+        <ComboBox x:Name="cbUserId" Width="170" Height="25"
              Margin="520,76,0,0"
-             HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+             HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" SelectedValuePath="userId" DisplayMemberPath="fullname"/>
 
         <TextBlock Text="Код заказа" Margin="10,114,0,0"
                VerticalAlignment="Top" Grid.ColumnSpan="2"/>

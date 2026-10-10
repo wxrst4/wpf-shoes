@@ -25,6 +25,9 @@ namespace wpf_shoes.admin
         public CreateOrderWindow()
         {
             InitializeComponent();
+
+            cbAddressId.ItemsSource = db.addresses.ToList();
+            cbUserId.ItemsSource = db.users.ToList();
         }
 
         private void BtnAddOrder(object sender, RoutedEventArgs e)
@@ -35,8 +38,8 @@ namespace wpf_shoes.admin
                 articleNumber = tbArticleNumber.Text,
                 createdAt = DateTime.Parse(tbCreatedAt.Text),
                 deliveredAt = DateTime.Parse(tbDeliveredAt.Text),
-                addressId = long.Parse(tbAddressId.Text),
-                userId = long.Parse(tbUserId.Text),
+                addressId = (long)cbAddressId.SelectedValue,
+                userId = (long)cbUserId.SelectedValue,
                 code = long.Parse(tbCode.Text),
                 status = tbStatus.Text
             };
