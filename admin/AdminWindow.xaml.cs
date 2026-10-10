@@ -123,13 +123,11 @@ namespace wpf_shoes.admin
 
         private void BtnFilterProductsById(object sender, RoutedEventArgs e)
         {
-            var id = long.Parse(tbId.Text.Trim());
-
             ProductsGrid.ItemsSource = db.products
                 .Include(p => p.category)
                 .Include(p => p.manufacturer)
                 .Include(p => p.deliver)
-                .Where(p => p.productId > id)
+                .Where(p => p.productId > 5)
                 .ToList();
         }
     }
