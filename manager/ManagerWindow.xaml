@@ -8,7 +8,7 @@
         Title="ManagerWindow" Height="450" Width="800">
     <Grid>
 
-        <DataGrid x:Name="ProductsGrid" Margin="0,0,0,275">
+        <DataGrid x:Name="ProductsGrid" Margin="0,0,0,275" AutoGenerateColumns="False">
 
             <DataGrid.Columns>
 
@@ -26,7 +26,7 @@
 
         </DataGrid>
 
-        <DataGrid x:Name="OrdersGrid" Margin="0,164,0,114">
+        <DataGrid x:Name="OrdersGrid" Margin="0,164,0,114" AutoGenerateColumns="False">
 
             <DataGrid.Columns>
 
@@ -43,15 +43,15 @@
 
         </DataGrid>
 
-        <Button Content="Сортировать товары по ценне" HorizontalAlignment="Left" Margin="23,339,0,0" VerticalAlignment="Top" Width="206" Click="BtnSortProductByPrice"/>
+        <Button Content="Сортировать товары по ценне" HorizontalAlignment="Left" Margin="202,352,0,0" VerticalAlignment="Top" Width="190" Click="BtnSortProductByPrice" Height="23"/>
 
 
-        <TextBox Name = "tbName" HorizontalAlignment="Left" Margin="280,349,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="24"/>
-        <Button Content="поиск товара по названию" HorizontalAlignment="Left" Margin="260,378,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.25,0.316" Width="160" Click="BtnSearchProductsByCategory"/>
-        <Label Content="Введите название товара" HorizontalAlignment="Left" Margin="268,320,0,0" VerticalAlignment="Top" Width="152"/>
-        
-        
-        <Button Content="Фильтрация товара по ID" HorizontalAlignment="Left" Height="27" Margin="472,361,0,0" VerticalAlignment="Top" Width="157" Click="BtnFilterProductsById"/>
+        <TextBox Name = "tbName" HorizontalAlignment="Left" Margin="21,351,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="24"/>
+        <Button Content="поиск товара по названию" HorizontalAlignment="Left" Margin="21,380,0,0" VerticalAlignment="Top" Width="160" Click="BtnSearchProductsByCategory" Height="23"/>
+        <Label Content="Введите название товара" HorizontalAlignment="Left" Margin="21,320,0,0" VerticalAlignment="Top" Width="160"/>
+
+
+        <Button Content="Фильтрация товара по ID" HorizontalAlignment="Left" Height="23" Margin="202,380,0,0" VerticalAlignment="Top" Width="190" Click="BtnFilterProductsById"/>
 
 
 

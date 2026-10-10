@@ -20,18 +20,17 @@ namespace wpf_shoes
     /// </summary>
     public partial class ClientWindow : Window
     {
+        private shoes_dbEntities db = new shoes_dbEntities();
+
         public ClientWindow()
         {
             InitializeComponent();
 
-            using (var db = new shoes_dbEntities())
-            {
-                ProductsGrid.ItemsSource = db.products
+            ProductsGrid.ItemsSource = db.products
                     .Include(p => p.category)
                     .Include(p => p.manufacturer)
                     .Include(p => p.deliver)
                     .ToList();
-            }
         }
     }
 }

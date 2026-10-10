@@ -31,7 +31,7 @@ namespace wpf_shoes
 
         private void Btn_SingInGuest(object sender, RoutedEventArgs e)
         {
-            new GuestWindow().Show();
+            new ClientWindow().Show();
         }
 
     }

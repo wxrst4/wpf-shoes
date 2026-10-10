@@ -70,5 +70,6 @@ namespace wpf_shoes
                 .Where(p => p.productId > 5)
                 .ToList();
         }
+
     }
 }

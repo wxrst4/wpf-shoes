@@ -8,7 +8,7 @@
         Title="ClientWindow" Height="450" Width="800">
     <Grid>
 
-        <DataGrid x:Name="ProductsGrid">
+        <DataGrid x:Name="ProductsGrid" AutoGenerateColumns="False" ColumnWidth="Auto">
 
             <DataGrid.Columns>
 
